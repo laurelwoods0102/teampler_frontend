@@ -14,7 +14,7 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/:userId',
+      path: '/userId',
       name: 'MyVue',
       component: MyVue
     }
