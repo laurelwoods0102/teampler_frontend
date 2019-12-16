@@ -1,11 +1,10 @@
 <template>
 <div>
     <div>
-    <div class="nav">       
+   <div class="nav">       
        <div class="left">
-          <div class="nav-item"><img src="../assets/teampler_logo.png" width="100px" height="20px"></div>
-
-       </div>
+          <div class="nav-item"><img src="../assets/teampler_logo.png" width="100px" height="20px"></div>       
+          </div>
       
         
         <div class="middle">
@@ -26,33 +25,20 @@
              <b-button variant="link" class="nav-item">팀정보</b-button>
            </div>
             
-            
-            
         </div>
         
         
         <div class="right">
-           
-            <div class="nav-item">
-              <!--<div class="square">
-            
-            <div> 
-              <b-button variant="link" linkclass="square1" style="color:gray">알림</b-button>
-              </div>
-          
-                </div>-->
+    
              
         <div class="nav-item" id=alram>설정</div>
         <div class="nav-item" id=log>로그아웃</div>
-        <b-img right src="https://picsum.photos/125/125/?image=58" alt="Right image" id="info"></b-img> 
-            
+        <b-img right src="https://picsum.photos/125/125/?image=58" alt="Right image" class="info"></b-img>
+
        
         
      </div>
-    </div>      
-    </div>
-    
-    
+</div>
   
    
     </div>
@@ -61,13 +47,13 @@
     
   
     <div class="body">
-        <div class="title">
+        <div class="ongoing">
         <b>진행 중인 Task</b>
         </div>
-    
+    <b-button variant="link" class="new" ><router-link :to="{ path: 'task1' }"><a>새로운 Task추가</a></router-link></b-button>
     <div>
       <b-button variant="outline-secondary" class="task"id="first">
-        <b>1차 발표 PPT 제작</b>
+        1차 발표 PPT 제작
         <div class="task_detail">
             2019.11.30 18:00까지
         </div>
@@ -79,7 +65,7 @@
     
     <div>
     <b-button variant="outline-secondary" class="task" id="second">
-        <b>1차 발표 자료조사</b>
+        1차 발표 자료조사
         <div class="task_detail">
             Design Thinking Process 조사
         </div>
@@ -90,10 +76,10 @@
     
     <div>
     <b-button variant="outline-secondary" class="task" id="third"><router-link :to="{ path: 'Page4' }">
-       <b>1차 발표 Script작성</b>
-        <div class="task_detail">
+       <a>1차 발표 Script작성</a>
+        <c><div class="task_detail">
             제작 완료된 Slide를 바탕으로 발표 Script 작성
-        </div>
+        </div></c>
         <b-img right src="https://picsum.photos/125/125/?image=58" alt="Right image" class="image"></b-img>
         </router-link>
         </b-button>
@@ -105,7 +91,7 @@
     
     <div>
       <b-button variant="outline-secondary" class="task" id="first">
-        <b>1차 발표 PPT 제작</b>
+        1차 발표 PPT 제작
         <div class="task_detail">
             2019.11.30 18:00까지
         </div>
@@ -115,7 +101,7 @@
     
     <div>
     <b-button variant="outline-secondary" class="task" id="second">
-        <b>1차 발표 자료조사</b>
+        1차 발표 자료조사
         <div class="task_detail">
             Design Thinking Process 조사
         </div>
@@ -125,7 +111,7 @@
     
     <div>
     <b-button variant="outline-secondary" class="task" id="third">
-       <b>1차 발표 Script작성</b>
+       1차 발표 Script작성
         <div class="task_detail">
             제작 완료된 Slide를 바탕으로 발표 Script 작성
         </div>
@@ -139,7 +125,7 @@
     
     <div>
       <b-button variant="outline-secondary" class="task" id="first">
-        <b>1차 발표 PPT 제작</b>
+        1차 발표 PPT 제작
         <div class="task_detail">
             2019.11.30 18:00까지
         </div>
@@ -149,7 +135,7 @@
     
     <div>
     <b-button variant="outline-secondary" class="task" id="second">
-        <b>1차 발표 자료조사</b>
+        1차 발표 자료조사
         <div class="task_detail">
             Design Thinking Process 조사
         </div>
@@ -159,7 +145,7 @@
     
     <div>
     <b-button variant="outline-secondary" class="task" id="third">
-       <b>1차 발표 Script작성</b>
+       1차 발표 Script작성
         <div class="task_detail">
             제작 완료된 Slide를 바탕으로 발표 Script 작성
         </div>
@@ -178,25 +164,37 @@
     text-align:left;
     display:inline;
     position:relative;
-    right:370px;
+    right:480px;
     bottom:5px;
+}
+.ongoing{
+    font-size:17px;
+    text-align:left;
+    display:inline;
+    position:relative;
+    right:430px;
+    bottom:5px;
+    
 }
 .task{
     font-size:17px;
-    width:400px;
-    padding:15px;
+    width:500px;
+    padding:20px;
     margin:10px;
     text-align:left;
     position:relative;
     outline:none;
-    border:1px solid gray;
+    border:0.5px solid #D5D5D5;
     border-radius:10px;
     height:90px;
+    color: #2c3e50;
     
 }
 .task_detail{
     font-size:12px;
     margin-top:5px;
+    padding-left:3px;
+    font-weight:lighter;
 }
 #first{
     display:relative;
@@ -210,72 +208,69 @@
     display:relative;
     transform:translate(-55%,-120%);
 }
-.nav{
-    height: 50px;
-    border:1px solid gray;
+  .nav{
+    height: 70px;
     display: flex;
     align-items: center;
-    font-size: 15px
+    font-size: 20px;
+    box-shadow:0px 1px 10px lightgray;
+    
     }
   .nav-item{display: flex;
     align-items: center;
-    font-size: 13px;
-    color:gray;
-    }  
+    font-size: 12px;
+    color:#707070;
+    padding:17px;}  
+
   .right{display: flex;
     position: relative;
-    left:670px;
+    left:540px;
+    
     }
   .middle{ 
     display: flex;
     position: relative;
-    left:400px;
+    left:200px;
     }
   .left{
     display: flex;
     position: relative;
-    left:330px;
+    left:80px;
     }
-  .square{ 
-    border: 0.3px solid gray;
-    display: flex;
-    align-items: center;
-    font-size: 10px;
-    height: 30px;
-    width: 60px;
-    
-    
+
+  .info{
+      border-radius:100%;
+      width:35px;
+      height:35px;
+      margin-top:10px;
+ 
     }
-  .square1{
-    margin-left: 3px;
-    
-    }     
-  
-  
-  
-    #alram{
-      position: relative;
-      padding:10px;
-      }
+     #log{
+      padding-left:5px;
+    }
+ 
+
     
     .body{
         margin-top:50px;
     }
     .image{
-        border:1px solid;
         border-radius:100%;
         display:float;
         position:relative;
         top:-50px;
-        width:60px;
+        width:50px;
         margin-top:0px;
     }
-    #info{
-      border-radius:100%;
-      width:30px;
-      margin-left:5px;
+    a,c:visited{
+      color: #2c3e50;
     }
-*{
-    color:gray;
-}
+    .new{
+      color: #2c3e50;
+      position:relative;
+      transform:translate(350%);
+      font-size:13px;
+     
+    }
+   
 </style>

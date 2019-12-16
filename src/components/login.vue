@@ -1,14 +1,18 @@
 <template>
  <div>
     
+    
     <body>
-      <b-form-input v-model="exName" type='text' placeholder='아이디'>Name</b-form-input>
-      <b-form-input v-model="exStuId" type='password' placeholder='비밀번호'>StudentID</b-form-input>
+
+      <div id="logo"><img src="../assets/teampler_logo.png" width="150px" height="30px"></div>
+      <b-form-input v-model="exName" type='text' placeholder='아이디' class="placeholder">Name</b-form-input>
+      <b-form-input v-model="exStuId" type='password' placeholder='비밀번호' class="placeholder">StudentID</b-form-input>
       <b-button style="width:300px" id="button"><router-link :to="{ path: 'Page1' }">로그인</router-link></b-button>
       <br></br>
       <div id = "forget">아이디/ 비밀번호를 잊으셨나요? </div>
       <div id = "join">회원가입</div>
     </body>
+    
   </div>
 </template>
 
@@ -53,16 +57,18 @@ export default {
 <style>
 
 .form-control{
-  width:300px;
+  width:285px;
   height:30px;
   margin:auto;
 }
 #__BVID__5{
-    margin_bottom:5px;;
+  margin_bottom:5px;
+  border:1px solid #C4C4C4
 }
 #__BVID__6{
   margin-top:10px;
   margin-bottom:10px;
+  border:1px solid #C4C4C4
 }
 a{
   color:white;
@@ -72,6 +78,7 @@ a:hover{
 }
 #forget{
   margin-top:10px;
+  color:#535353;
 }
 #join{
   margin-top:13px;
@@ -80,10 +87,23 @@ a:hover{
 #button{
   background-color:#7030A0;
 }
+
 body{
   text-align:center !important;
-  margin-top:10px;
+  padding:70px;
+  
 }
+.placeholder{
+  border:1px solid #C4C4C4;
+}
+#logo{
+  margin-bottom:30px;
+}
+
+*{
+  font-size:13px;
+}
+
 
 
 </style>

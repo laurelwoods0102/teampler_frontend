@@ -2,8 +2,7 @@
 <div>
     <div class="nav">       
        <div class="left">
-          <div class="nav-item">Teampler(Logo)</div>
-       </div>
+          <div class="nav-item"><img src="../assets/teampler_logo.png" width="100px" height="20px"></div>       </div>
       
         
         <div class="middle">
@@ -74,7 +73,11 @@
     
     <div class="html">
     
-    <dive class="word">HTML Text Editor</dive>
+    <dive class="word">
+      <p>++>추가>An application server is a software framework that provides both facilities </p>
+      <p>to create web applications and a server environment to run them.</p>
+
+    </dive>
     
     
     
@@ -84,7 +87,8 @@
     <div class="profile">
         
         
-        <div class="pic">profile</div>
+        <b-img right src="https://picsum.photos/125/125/?image=58" alt="Right image" class="pic"></b-img>
+
         
         
         
@@ -119,7 +123,7 @@
    
    <div class="line"></div>
 
-   <div class="comment"></div>
+   <div class="comment"><p>최대한 빨리 추가해주세요, 감사합니다.</p></div>
    
 
 <div class="wan">
@@ -218,17 +222,13 @@
   
   .profile{display: flex;}
   
-  .pic{font-size: 10px;
-          height: 40px;
-        border: 1px solid black;
-      margin-left: 60px;
-    margin-right: 950px;
-        border-radius: 50px;
-    padding: 5px;
-        padding-top:11px;
-        padding-bottom: 1px;
-    position: relative;
-          top:500px;}
+  .pic{
+     border-radius:100%;
+     padding:5px;
+     display:relative;
+     width:50px;
+     transform:translate(100%,1020%);
+  }
   
   
   .name{font-size:17px; 
@@ -277,12 +277,17 @@
     .comment{   
       border:0.5px solid black;
       width:1068px;
-      height: 100px;
+      height: 50px;
       margin-left:50px;
       position:relative;
       top:230px;
       left:80px;   
       border-radius: 10px;
+      text-align: left;
+    }
+    .comment > p {
+      margin-top: 10px;
+      margin-left: 10px;
     }
 
     
@@ -295,7 +300,9 @@
             bottom:650px;
             border-radius: 3px;
             color:dodgerblue;
-            border-color: dodgerblue;}
+            border-color: dodgerblue;
+            margin-top: 10px;
+            }
 
         .ryo{position: relative;
             margin-left: 5px;

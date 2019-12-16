@@ -7,6 +7,7 @@ import Page2 from '@/components/page2'
 import Page3 from '@/components/page3'
 import Page4 from '@/components/page4'
 import Page5 from '@/components/page5'
+import task1 from '@/components/task1'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/Page5',
       name: 'Page5',
       component: Page5
+    },
+    {
+      path:'/task1',
+      name:'task1',
+      component: task1
     },
   ]
 })

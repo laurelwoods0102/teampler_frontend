@@ -2,7 +2,7 @@
 <div>
     <div class="nav">       
        <div class="left">
-          <div class="nav-item">Teampler(Logo)</div>
+          <div class="nav-item"><img src="../assets/teampler_logo.png" width="100px" height="20px"></div>
        </div>
       
         
@@ -74,7 +74,12 @@
     
     <div class="html">
     
-    <dive class="word">HTML Text Editor</dive>
+    <dive class="word">
+      <p>++>추가>An application server is a software framework that provides both facilities </p>
+      <p>to create web applications and a server environment to run them.</p>
+
+    </dive>
+
     
     
     
@@ -119,13 +124,13 @@
    
    <div class="line"></div>
 
-   <div class="comment"></div>
+   <div class="comment"><p>최대한 빨리 추가해주세요, 감사합니다.</p></div>
 
 
     <div class="jae">
     
     <div class="chool">제출이 완료되었습니다!</div>
-    <div class="dad">닫기</div>
+    <div class="dad" b-button variant="light">닫기</b-button></div>
     </div>
    
     <div class="wang">
@@ -164,6 +169,7 @@
     display: flex;
     position: relative;
     left:160px;
+    color:black;
     }
   .left{
     display: flex;
@@ -280,12 +286,17 @@
     .comment{   
       border:0.5px solid black;
       width:1068px;
-      height: 100px;
+      height: 50px;
       margin-left:50px;
       position:relative;
       top:230px;
       left:80px;   
       border-radius: 10px;
+      text-align: left;
+    }
+    .comment > p {
+      margin-top: 10px;
+      margin-left: 10px;
     }
 
  .jae{height: 150px;
@@ -315,7 +326,8 @@
             position: relative;
             left:1170px;
             bottom:800px;
-            border-radius: 3px;}
+            border-radius: 3px;
+            margin-top:10px;}
 
         .ryog{position: relative;
             margin-left: 10px;
